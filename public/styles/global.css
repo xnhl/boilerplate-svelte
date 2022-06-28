@@ -1,0 +1,39 @@
+/* Font is loaded via fonts.css but this is another way */
+/* @font-face {
+	font-family: 'Open Sans';
+	src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+} */
+
+/* Other CSS files can be imported instead of including in HTML head */
+@import 'fonts.css';
+@import 'variables.css';
+
+body {
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background: var(--background);
+	color: var(--text);
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.1rem;
+	box-sizing: border-box;
+}
+
+#hello {
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 2rem;
+	line-height: 2rem;
+	letter-spacing: 0.25rem;
+}
