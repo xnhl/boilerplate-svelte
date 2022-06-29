@@ -1,14 +1,8 @@
 <script>
+	import HelloWorld from './components/HelloWorld.svelte'
 	console.log("hello world (App.svelte)")
 </script>
 
-<p id="hello">hello world</p>
+<HelloWorld msg="hello world" />
 
-<style type="text/sass">
-#hello
-	padding: 1rem
-	cursor: pointer
-	font-size: 2rem
-	line-height: 2rem
-	letter-spacing: 0.25rem
-</style>
+<style type="text/sass"></style>
